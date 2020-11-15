@@ -1,0 +1,36 @@
+/* quem somos */
+/* icon */
+.se_iii .box_icon {
+    width: 50px;
+  }
+  /* title */
+  .se_iii .box_title {
+    color: #fff;
+    font-weight: 400;
+  }
+  /* border */
+  .se_iii .box_border {
+    height: 3px;
+    width: 120px;
+  }
+  /* info */
+  .se_iii .box_info {
+    font-size: 14px;
+    color: #AAA;
+  }
+  /* card */
+  .se_ii .theme_card {
+    padding: 80px 30px 40px;
+  }
+  /* card title */
+  .se_ii .card_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+  }
+  /* card subtitle */
+  .se_ii .card_sub_title {
+    color: #AAA;
+    font-size: 16px;
+  }
+  /* --------------------------------- */
