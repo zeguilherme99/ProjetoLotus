@@ -13,3 +13,19 @@
 .fundinho-produto{
     background-image: url("https://images.pexels.com/photos/1171581/pexels-photo-1171581.jpeg");
 }
+
+
+.aument-transi:hover{
+    transform: scale(1.07);
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    animation-direction: reverse;
+}
+
+.aument-transi:hover::before{
+    opacity: 1000;
+}
+
+.cleitin{
+    animation-direction: normal;
+}

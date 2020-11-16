@@ -25,4 +25,17 @@ return this.http.get(`http://localhost:8080/categoria/${id}`, this.token)
     return this.http.post("http://localhost:8080/categoria", categoria, this.token)
   }
 
+  putCategoria(categoria: Categoria){
+    return this.http.put("http://localhost:8080/categoria", categoria, this.token)
+  }
+
+  deleteCategoria(id:number){
+    return this.http.delete(`http://localhost:8080/categoria/${id}`, this.token)
+  }
+
+ getByNomeCategoria(nome: string){
+    return this.http.get(`http://localhost:8080/categoria/nome/${nome}`, this.token)
+ }
+ 
+
 }

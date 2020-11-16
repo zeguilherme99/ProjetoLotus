@@ -11,10 +11,10 @@ import { HomeComponent } from './home/home.component';
 import { QuemsomosComponent } from './quemsomos/quemsomos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import{ModalModule} from 'ngx-bootstrap/modal'
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-
+import {FileUploadModule} from 'ng2-file-upload';
 import { ProdutoComponent } from './produto/produto.component';
 import { BackgroundComponent } from './background/background.component';
 import { PostProdutoComponent } from './post-produto/post-produto.component';
@@ -23,6 +23,7 @@ import { PutProdutoComponent } from './put-produto/put-produto.component';
 import { PutCategoriaComponent } from './put-categoria/put-categoria.component';
 import { DeleteProdutoComponent } from './delete-produto/delete-produto.component';
 import { DeleteCategoriaComponent } from './delete-categoria/delete-categoria.component';
+import { AlertasComponent } from './alertas/alertas.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { DeleteCategoriaComponent } from './delete-categoria/delete-categoria.co
     PutCategoriaComponent,
     DeleteProdutoComponent,
     DeleteCategoriaComponent,
+    AlertasComponent,
     
     
   ],
@@ -52,7 +54,9 @@ import { DeleteCategoriaComponent } from './delete-categoria/delete-categoria.co
     FontAwesomeModule,
     FormsModule,
     HttpClientModule ,
-    OrderModule 
+    OrderModule,
+    ModalModule.forRoot(),
+    FileUploadModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,3 +12,52 @@
     background-size: cover;
 }
 
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  .slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+.drop-box {
+  cursor: pointer;
+  background: #F8F8F8;
+  border: 5px dashed #DDD;
+  text-align: center;
+  padding: 40px;
+}
+ 
+.drag-over-title {
+  display: none;
+}
+ 
+.drop-box.dragover {
+  opacity: 0.6;
+}
+ 
+.drop-box.dragover .drag-over-title {
+  display: block;
+}
+ 
+.drop-box.dragover .drag-in-title {
+  display: none;
+}
+ 
+input[type='file'] {
+  display: none;
+}
+
