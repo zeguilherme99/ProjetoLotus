@@ -1,30 +1,50 @@
 <div class="container-fluid fundinho justify-content-center">
 
     <div class="row">
+    <div class="col-md-4"></div>
 
+        <div class="col-md-4">
 
-        <div class="col-md-8">
-
-            <h3 class="text-center mb-4 text-monospace">Como tem sido minha experiência na Generation?</h3>
+            <h3 class="text-center mb-4 text-monospace">Cadastre seu Produto</h3>
 
             <div class="form-group">
-                <label class="text-monospace" for="titulo">Título:</label>
+                <label class="text-monospace" for="titulo">Nome do Produto:</label>
                 <input type="text" class="form-control" id="titulo" placeholder="Digite aqui o nome do produto"
                     [(ngModel)]="produto.nome">
             </div>
 
             <div class="form-group">
-                <label class="text-monospace" for="texto">Texto:</label>
-                <textarea class="form-control" id="texto" rows="3" placeholder="Digite aqui o seu texto"
+                <label class="text-monospace" for="texto">Material:</label>
+                <textarea class="form-control" id="texto" rows="1" placeholder="Digite aqui o material do Produto"
                     [(ngModel)]="produto.material"></textarea>
             </div>
+
+            <div class="form-group">
+                <label class="text-monospace" for="texto">Valor:</label>
+                <textarea class="form-control" id="number" rows="1" placeholder="Digite aqui preço do Produto"
+                    [(ngModel)]="produto.valor"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="text-monospace" for="texto">Quantidade:</label>
+                <textarea class="form-control" id="number" rows="1" placeholder="Digite aqui a quantidade desse produto"
+                    [(ngModel)]="produto.quantidade"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="text-monospace" for="imagem">Imagem do Produto:</label>
+                <input type="text" class="form-control" id="imagem" placeholder="Insira o link da imagem do Produto"
+                    [(ngModel)]="produto.imagem">
+            </div>
+
+            
 
             <div class="row d-flex align-items-end">
 
                 <div class="col-md-6">
                     <div class="form-group m-0">
-                        <label class="text-monospace" for="categoria">Escolha um tema ou <a
-                                routerLink='/cadastrocategoria'>Cadastre um
+                        <label class="text-monospace cleiton" for="categoria">Escolha um tema ou <a
+                                routerLink='/cadastrocategoria' >Cadastre um
                                 novo</a></label>
                         <select name="categoria" id='categoria' class="form-control" [(ngModel)]="idCategoria"
                             (change)="findCategoriaById()">
@@ -97,7 +117,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <p class="card-text" aria-describedby="texto"> {{item.texto}} </p>
+                                    <p class="card-text" aria-describedby="texto"> {{item.material}} </p>
                                     <small id="texto" class="form-text m-0 text-muted mb-3 text-monospace">
                                         Postado em {{item.data}}</small>
                                 </div>

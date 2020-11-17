@@ -29,3 +29,18 @@
 .cleitin{
     animation-direction: normal;
 }
+
+.fundinho2{
+    background-image: url("https://i.imgur.com/KAljReX.gif");
+   
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+
+  .jumbotron-fluid {
+    padding-right: 10;
+    padding-left: 10;
+    border-radius: 10;
+}

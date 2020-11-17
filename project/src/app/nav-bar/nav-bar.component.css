@@ -40,6 +40,28 @@ a{
 	border-radius: 10px;
 }
 
+.navbar:hover{
+	transform: scale(1.02);
+	transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.backbody {
+	background: linear-gradient(-45deg, rgb(255, 255, 255), #110df1, #0662b8, #23a6d5, #0582e7);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
    

@@ -8,6 +8,6 @@ export class Produto{
     public material: string;
     public quantidade: number;
     public categoria: Categoria;
-    public data: Date
-    
+    public data: Date;
+    public imagem: string;
 }

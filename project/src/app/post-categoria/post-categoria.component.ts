@@ -47,6 +47,7 @@ this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) 
   this.categoria = resp
   this.router.navigate(['/cadastroproduto'])
   this.alerts.showAlertSuccess('Categoria cadastrada com sucesso!')
+  
 })
     }
   }
